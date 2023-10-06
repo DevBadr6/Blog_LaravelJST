@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController')->name('home');
 
+Route::get('/blog', 'PostController@index')->name('posts.index');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
