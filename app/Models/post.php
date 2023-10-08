@@ -12,7 +12,7 @@ class post extends Model
   use HasFactory;
 
   protected $casts = [
-    'published_at' => 'datetime'
+    'published_at' => 'datetime' 
   ];
 
   public function author()
